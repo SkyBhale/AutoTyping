@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Type ID",
+  "version": "1.0",
+  "description": "Automatically types the display of an ID into an input field.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://saranghero.com/play"],  
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon48.png",
+      "48": "icon48.png",
+      "128": "icon48.png"
+    }
+  }
+}
